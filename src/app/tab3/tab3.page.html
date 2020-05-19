@@ -6,12 +6,143 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Contact</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <p>Ardilaheka@gmail.com</p>
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-icon name="search"></ion-icon>
+          <ion-input type="search" placeholder="Hot Picks" [(ngModel)]="search"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col class="img1">
+        <img src="../../assets/img/check-logo.png" alt="">
+      </ion-col>
+      <ion-col class="icon">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-slides #slides pager="true" [options]="slideOpts">
+    <!-- <ion-slides #slides pager="true" [options]="slideOpts" (ionSlideOldChange)="ionSlideOldChange(slides)"> -->
+    <ion-slide class="step-one bg1">
+      <ion-text>
+        <h1><b>Promo Venue</b></h1>
+      </ion-text>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <ion-button class="tour-button">
+        <!-- <ion-button class="tour-button" (click)="next()"> -->
+        <div class="parent">
+          {{buttonName}}
+        </div>
+      </ion-button>
+    </ion-slide>
+    <ion-slide class="step-one bg2">
+      <ion-text>
+        <h1><b>Promo Venue</b></h1>
+      </ion-text>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <ion-button class="tour-button">
+        <div class="parent">
+          {{buttonName}}
+        </div>
+      </ion-button>
+    </ion-slide>
+    <ion-slide class="step-one bg3">
+      <ion-text>
+        <h1><b>Promo Venue</b></h1>
+      </ion-text>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <ion-button class="tour-button">
+        <div class="parent">
+          {{buttonName}}
+        </div>
+      </ion-button>
+    </ion-slide>
+    <ion-slide class="step-one bg4">
+      <ion-text>
+        <h1><b>Promo Venue</b></h1>
+      </ion-text>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <ion-button class="tour-button">
+        <div class="parent">
+          {{buttonName}}
+        </div>
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+  <div class="content gbr">
+    <img src="../../assets/img/cafe2.jpg" alt="cafe">
+    <p>
+      <ion-icon name="star-outline"></ion-icon>
+      <ion-icon name="star-outline"></ion-icon>
+      <ion-icon name="star-outline"></ion-icon>
+      <ion-icon name="star-outline"></ion-icon>
+      <ion-icon name="star-half-outline"></ion-icon>
+    </p>
+    <ion-text>
+      <h5>Peket Promo Resto</h5>
+    </ion-text>
+    <p>Grand Indonesia East Mall Lt.1, Jl. MH. Thamrin</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <p>
+            <ion-badge color="success">-5%</ion-badge>
+          </p>
+        </ion-col>
+        <ion-col>
+          <p>
+            <ion-icon name="gift-outline" color="danger"></ion-icon> Free Honeymoon to Europe
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p>
+            <ion-icon name="bicycle-outline"></ion-icon> Take Away
+          </p>
+        </ion-col>
+        <ion-col>
+          <p>
+            <ion-icon name="woman-outline"></ion-icon> For Here
+          </p>
+        </ion-col>
+        <ion-col>
+          <p>
+            <ion-icon name="person-circle-outline"></ion-icon> Max 3 Person
+          </p>
+        </ion-col>
+        <ion-col>
+          <p>
+            <ion-icon name="time-outline"></ion-icon> Durasi Paket 3 Jam
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-text>
+            <h6><b>Rp. 250.000.000</b> / paket</h6>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p><del>Rp. 350.000.000</del></p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p>Senin - Rabu : 07 am / 09 pm</p>
+        </ion-col>
+        <ion-col>
+          <p>
+            <ion-icon name="calendar-outline"></ion-icon> <b>Expired until - 28/08/2017</b>
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
 </ion-content>

@@ -1,0 +1,90 @@
+
+ion-content {
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    // margin: 0 auto;
+    overflow: auto;
+}
+
+ion-slide {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-width: 100%;
+    flex-direction: column;
+}
+
+ion-slide p {
+    margin: 0;
+    font-size: 13px !important;
+    line-height: 15px !important;
+    color: #fff;
+    margin-top: 0 !important;
+    padding: 10px 25px 10px 25px;
+    margin-bottom: 10px;
+}
+ion-slide h1 {
+    color: #fff;
+}
+
+// .center {
+//     position: absolute;
+//     left: 48%;
+//     top: 35%;
+//     -webkit-transform: translate(-49%, -49%);
+//     width: 100%;
+// }
+
+// ion-slides {
+//     padding-top: 10px;
+// }
+
+.img1 img {
+    width: 50px;
+    margin-left: 40%;
+}
+
+
+.icon ion-icon {
+    font-size: 30px;
+    margin-left: 30%;
+}
+.bg1 {
+    background-image: url(../../assets/img/cafe1.jpg);
+    background-size: 100%;
+}
+.bg2 {
+    background-image: url(../../assets/img/cafe2.jpg);
+    background-size: 100%;
+}
+.bg3 {
+    background-image: url(../../assets/img/cafe3.jpg);
+    background-size: 100%;
+}
+.bg4 {
+    background-image: url(../../assets/img/cafe4.jpg);
+    background-size: 100%;
+}
+
+
+[text-center]{
+    color: "#e06278";
+}
+
+.content {
+    margin-top: 5px;
+    margin-left: 17%;
+    margin-right: 3%;
+    margin-bottom: 100px;
+}
+.content p {
+    font-size: 13px;
+}
+.content p ion-icon {
+    font-size: 20px;
+}
+.gbr img {
+    width: 80%;
+}
