@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      About
+      Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,37 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">About</ion-title>
+      <ion-title size="large">Login</ion-title>
     </ion-toolbar>
   </ion-header>
-  <p>This is a sample news application</p>
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="header">
+    <img src="../../assets/img/bdlogo.jpg" alt="logo">
+    <p>Murah, banyak promo, pasti dapat tempat!</p>
+  </div>
+  <form action="">
+    <ion-item>
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-input type="text" placeholder=" Nama Lengkap"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="mail-outline"></ion-icon>
+      <ion-input type="text" placeholder=" Alamat Email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <ion-input type="password" placeholder=" Password"></ion-input>
+    </ion-item>
+    <ion-button expand="block" color="primary">Daftar</ion-button>
+  </form>
+  <p>Punya akun ? <a href="">Login disini</a></p>
+  <p>atau</p>
+  <ion-button expand="block" color="danger" class="signup">
+    <ion-icon name="logo-google"></ion-icon> Daftar dengan Google
+  </ion-button>
+  <ion-button expand="block" color="warning" class="signup">
+    <ion-icon name="logo-instagram"></ion-icon> Daftar dengan Instagram
+  </ion-button>
+  <ion-button expand="block" color="tertiary" class="signup">
+    <ion-icon name="logo-facebook"></ion-icon> Daftar dengan Facebook
+  </ion-button>
 </ion-content>

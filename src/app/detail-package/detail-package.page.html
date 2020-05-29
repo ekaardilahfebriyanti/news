@@ -1,0 +1,191 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>detail-package</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-icon name="search"></ion-icon>
+          <ion-input type="search" value="paket all you can eat" placeholder="Hot Picks" [(ngModel)]="search">
+          </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-slides #slides pager="true" [options]="slideOpts">
+    <!-- <ion-slides #slides pager="true" [options]="slideOpts" (ionSlideOldChange)="ionSlideOldChange(slides)"> -->
+    <ion-slide class="step-one bg1">
+      <ion-text>
+        <h1><b>La Brasseri Restaurant</b></h1>
+      </ion-text>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p>Jln. Jendral Sudirman, Jakarta 10200, Indonesia </p>
+          </ion-col>
+          <ion-col>
+            <p>
+              <ion-badge color="success">-30%</ion-badge>
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide class="step-one bg2">
+      <ion-text>
+        <h1><b>La Brasseri Restaurant</b></h1>
+      </ion-text>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p>Jln. Jendral Sudirman, Jakarta 10200, Indonesia </p>
+          </ion-col>
+          <ion-col>
+            <p>
+              <ion-badge color="success">-30%</ion-badge>
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide class="step-one bg3">
+      <ion-text>
+        <h1><b>La Brasseri Restaurant</b></h1>
+      </ion-text>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p>Jln. Jendral Sudirman, Jakarta 10200, Indonesia </p>
+          </ion-col>
+          <ion-col>
+            <p>
+              <ion-badge color="success">-30%</ion-badge>
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide class="step-one bg4">
+      <ion-text>
+        <h1><b>La Brasseri Restaurant</b></h1>
+      </ion-text>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p>Jln. Jendral Sudirman, Jakarta 10200, Indonesia </p>
+          </ion-col>
+          <ion-col>
+            <p>
+              <ion-badge color="success">-30%</ion-badge>
+            </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+  <ion-button color="warning" expand="full">
+    <ion-icon name="calendar-outline"></ion-icon> Promo Expired Until 22/06/2017
+  </ion-button>
+  <div class="content gbr">
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <p>
+            <ion-icon name="bicycle-outline"></ion-icon> Take Away
+          </p>
+        </ion-col>
+        <ion-col>
+          <p>
+            <ion-icon name="person-circle-outline"></ion-icon> Max 3 Person
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p>
+            <ion-icon name="woman-outline"></ion-icon> For Here
+          </p>
+        </ion-col>
+        <ion-col>
+          <p>
+            <ion-icon name="time-outline"></ion-icon> Durasi Paket 3 Jam
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-badge color="secondary">
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </ion-badge>
+        </ion-col>
+        <ion-col>
+          <p>Diskon 30% untuk pembayaran minimal 1 juta rupiah</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-badge color="secondary">
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </ion-badge>
+        </ion-col>
+        <ion-col>
+          <p>Pesan 2 paket gratis 1 paket</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-badge color="secondary">
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </ion-badge>
+        </ion-col>
+        <ion-col>
+          <p>Gratis 1 paket untuk transaksi sebesar 1 juta rupiah</p>
+        </ion-col>
+      </ion-row>
+      <ion-row></ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-badge color="success">
+            <ion-text>
+              <h4>9.5</h4>
+            </ion-text>
+          </ion-badge>
+        </ion-col>
+        <ion-col>
+          <ion-text>
+            <h6><b>of Luar Biasa</b></h6>
+          </ion-text>
+          <p>nilai berdasarkan 23 ulasan</p>
+        </ion-col>
+        <ion-col>
+          <img src="../../assets/img/foto.jpg" alt="foto" class="foto">
+        </ion-col>
+        <ion-col>
+          <ion-text>
+            <h6>Last Review From</h6>
+          </ion-text>
+          <p><b>John Doe</b></p>
+        </ion-col>
+      </ion-row>
+      <ion-item-divider>
+      </ion-item-divider><br>
+      <ion-row>
+        <ion-col><a href="">View All Reviews</a></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-text>
+            <h6><b>Location</b></h6>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+</ion-content>

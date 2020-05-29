@@ -91,3 +91,16 @@ ion-slide h1 {
 .content ion-grid ion-row ion-col {
     padding: 0px;
 }
+
+ion-grid ion-row ion-col .foto {
+    width: 20%;
+}
+
+ion-grid ion-row ion-col ion-item-driver {
+    margin-bottom: 20px;
+}
+
+ion-grid ion-row ion-col a {
+    margin-left: 50%;
+    text-decoration-line: none;
+}
